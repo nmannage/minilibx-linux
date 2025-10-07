@@ -10,7 +10,7 @@ Make sure you have the required packages (Ubuntu/Debian):
 
 ```bash
 sudo apt-get update
-sudo apt-get install -y build-essential xorg libxext-dev libx11-dev libbsd-dev zlib1g-dev
+sudo apt-get install -y build-essential xorg libxext-dev libx11-dev libbsd-dev libxpm-dev
 ```
 
 ## 💻 Build
@@ -44,5 +44,5 @@ int main(void)
 Compile your program with:
 
 ```bash
-gcc your_program.c -L. -lmlx -lXext -lX11 -lm -o your_program
+gcc your_program.c -L. -lmlx -lXext -lX11 -o your_program
 ```
